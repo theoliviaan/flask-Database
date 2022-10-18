@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center> Update an item </center>
+    <div class="form">
+        <form action="/update/{{user.id}}" method="post">
+            <label for="username"> Username </label>
+            <input type="text" name="username" id="username" value="{{user.username}}">
+            <br>
+            <br>
+
+
+            <label for="email"> Email </label>
+            <input type="email" name="email" id="email" value="{{user.email}}">
+            <br>
+            <br>
+
+
+            <label for="age"> Age </label>
+            <input type="text" name="age" id="age" value="{{user.age}}">
+            <br>
+            <br>
+
+
+            <label for="gender"> Gender </label>
+            <select name="gender" id="">
+                <option value="{{user.gender}}"> {{user.gender}} </option>
+                <option value="male"> Male </option>
+                <option value="female"> Female </option>
+                <option value="cannot_say"> Prefer not to say</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit"> Save </button>
+
+        </form>
+
+        <br>
+
+<!--        <table>-->
+<!--            <thead>-->
+<!--                <th> Username </th>-->
+<!--                <th> Email </th>-->
+<!--                <th> Age </th>-->
+<!--                <th> Gender </th>-->
+<!--                <th> Action </th>-->
+<!--            </thead>-->
+<!--            <tbody>-->
+<!--                {% for user in users %}-->
+<!--                <tr>-->
+<!--                    <td> {{user.username}} </td>-->
+<!--                    <td> {{user.email}} </td>-->
+<!--                    <td> {{user.age}} </td>-->
+<!--                    <td> {{user.gender}} </td>-->
+<!--                    <td> <a href="">Delete</a></td>-->
+<!--                    <td> <a href="">Update</a></td>-->
+<!--                </tr>-->
+<!--                {% endfor %}-->
+<!--            </tbody>-->
+<!--        </table>-->
+    </div>
+
+</body>
+</html>
